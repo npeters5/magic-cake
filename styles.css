@@ -84,7 +84,7 @@ main {
   padding: 20px;
   border: 1px solid #ddd;
   margin: 30px auto 0 auto;
-  width: 650px;
+  width: 500px;
 }
 .photos {
   list-style-type: none;
@@ -93,4 +93,8 @@ main {
 .photos li {
   display: inline;
   padding-left: 11px;
+}
+.photos img {
+  width: 150px;
+  height: auto;
 }
