@@ -13,6 +13,14 @@ a {
   border: 0;
 }
 
+body {
+  font-family: Helvetica, Arial, "Times New Roman", sans-serif;
+}
+
+/* ^The font-family property takes a list of fonts and the browser will 
+take the first one that it can in place, and the others will be fall back options
+ */
+
 h1 {
   margin: 10px 0 15px 0;
 }
@@ -122,7 +130,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-body {
+/* body {
   background: #5f5f5f url(images/background.jpg) top left repeat;
 }
 main {
@@ -131,10 +139,26 @@ main {
 .recipes li {
   background: #5f5f5f url(images/background2.png) top left repeat;
   color: rgb(25, 25, 255);
-}
+} */
+
+/* flex method
+.recipes li {
+  display: flex;
+} */
 
 .featured-image {
   position: relative;
+}
+
+/* grid method  */
+
+.recipes li {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-gap: 15px;
+}
+.recipes img {
+  width: 100px;
 }
 
 .featured-image h3 {
