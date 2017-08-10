@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body,
 h1,
@@ -11,10 +15,13 @@ a {
   padding: 0;
   margin: 0;
   border: 0;
+  font-size: 100%;
+  font: inherit;
 }
 
 body {
-  font-family: Helvetica, Arial, "Times New Roman", sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 /* ^The font-family property takes a list of fonts and the browser will 
@@ -26,7 +33,11 @@ h1 {
 }
 
 h2 {
+  color: #7facaa;
   margin: 10px 0 20px 0;
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
 }
 
 h3 {
@@ -150,6 +161,44 @@ main {
   position: relative;
 }
 
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 25px;
+  border: 2px solid #7facaa;
+  font-size: 24px;
+  padding: 7px;
+}
+
+input[type=submit] {
+  width: 240px;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 400px;
+  padding: 7px;
+  border: 2px solid #7facaa;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+input[type=checkbox],
+label[for=newsletter] {
+  display: inline;
+  margin-top: 10px;
+}
+
 /* grid method  */
 
 .recipes li {
@@ -168,4 +217,12 @@ main {
   padding: 10px;
   border: 0;
   text-transform: uppercase;
+}
+footer p {
+  color: #aaa;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  font-style: italic;
+  text-transform: capitalize;
 }
